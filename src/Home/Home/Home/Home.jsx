@@ -1,11 +1,12 @@
 import Banner from "../Banner/Banner";
+import AboutSection from "./AboutSection/AboutSection";
 
 
 const Home = () => {
     return (
         <div className="mb-4">
             <Banner></Banner>
-            <h1 className="text-3xl"> this is home</h1>
+           <AboutSection></AboutSection>
         </div>
     );
 };
