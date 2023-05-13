@@ -1,5 +1,6 @@
-const BookingList = ({ booking,handleDelete }) => {
-  const { _id,customerName, img, Price, email, service, date } = booking;
+const BookingList = ({ booking,handleDelete,handleBookingConfirm }) => {
+    // console.log(booking);
+  const { _id,customerName, img, Price, email, service, date,status } = booking;
 
 
 
@@ -41,7 +42,8 @@ const BookingList = ({ booking,handleDelete }) => {
       <td>{email}</td>
       <td>${Price}</td>
       <th>
-        <button className="btn btn-error btn-xs">Pending</button>
+        { status ==='confirm'? <span className="font-bold text-primary">Confirmed</span>    :
+            <button onClick={()=>handleBookingConfirm(_id)} className="btn btn-error btn-xs">Please Confirm</button>}
       </th>
     </tr>
   );
