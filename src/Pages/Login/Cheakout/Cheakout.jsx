@@ -69,7 +69,7 @@ fetch('http://localhost:5000/bookings',{
               <label className="label">
             <span className="label-text">Email</span>
           </label>
-                <input type="text" placeholder="Your Email" defaultValue={user?.email} readOnly name="email" className="input input-bordered" />
+                <input type="text" placeholder="Your Email" defaultValue={user?.email}  name="email" className="input input-bordered" />
               </div>
       </div>
               <div className="form-control mt-6">

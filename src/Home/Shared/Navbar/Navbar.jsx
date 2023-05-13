@@ -15,13 +15,20 @@ const Navbar = () => {
   }
     const navItems = <>
     
-    <li><Link className="text-2xl font-bold" to="/">Home</Link></li>
-       {user?.email ?
+    <li><Link  to="/">Home</Link></li>
 
-       <button className="btn btn-dark text-white" onClick={handleLogout} >LogOut</button>
+       {user?.email ? <>
+        <li><Link  to="/bookings">My Bookings</Link></li>
+        
+       <li> <Link  onClick={handleLogout} to="/login">Log Out</Link></li>
+
+
+       </>
+
+       
        
        :<li>
-         <Link to="/login">Login</Link>
+         <Link  to="/login">Login</Link>
          
         </li>}
        
