@@ -6,6 +6,7 @@ import Login from "../Pages/Login/Login";
 import Services from "../Home/Home/Home/Services/Services";
 import Cheakout from "../Pages/Login/Cheakout/Cheakout";
 import Bookings from "../Pages/Login/Bookings/Bookings";
+import PrivetRoute from "./PrivetRoute/PrivetRoute";
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/bookings",
-          element: <Bookings />,
+          element: <PrivetRoute><Bookings /></PrivetRoute>,
         },
         {
           path: "/cheakout/:id",
