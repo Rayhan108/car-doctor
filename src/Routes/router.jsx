@@ -3,7 +3,7 @@ import Home from "../Home/Home/Home/Home";
 import MainLayout from "../Layout/MainLayout/MainLayout";
 import SignUp from "../Pages/Login/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
-import Services from "../Home/Home/Home/Services/Services";
+
 import Cheakout from "../Pages/Login/Cheakout/Cheakout";
 import Bookings from "../Pages/Login/Bookings/Bookings";
 import PrivetRoute from "./PrivetRoute/PrivetRoute";
