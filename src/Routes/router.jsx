@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         {
           path: "/cheakout/:id",
           element:<PrivetRoute><Cheakout></Cheakout></PrivetRoute>,
-          loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+          loader:({params})=>fetch(`https://new-car-doctor-server-theta.vercel.app/services/${params.id}`)
         },
       ],
     },

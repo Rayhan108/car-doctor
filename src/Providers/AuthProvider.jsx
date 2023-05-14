@@ -33,7 +33,7 @@ const googleProvider = new GoogleAuthProvider()
         const loggedUser ={
             email:currentUser.email
           }
-        fetch('http://localhost:5000/jwt',{
+        fetch('https://new-car-doctor-server-theta.vercel.app/jwt',{
             method:'POST',
             headers:{
               'content-type':'application/json'
