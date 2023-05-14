@@ -25,7 +25,7 @@ const handleOrder=(event)=>{
        service_id: _id,
     }
 console.log(booking);
-fetch('https://new-car-doctor-server-theta.vercel.app/bookings',{
+fetch('https://new-car-doctor-blond.vercel.app/bookings',{
     method:"POST",
     headers:{
         "content-type":"application/json"
