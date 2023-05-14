@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/cheakout/:id",
-          element:<Cheakout></Cheakout>,
+          element:<PrivetRoute><Cheakout></Cheakout></PrivetRoute>,
           loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
         },
       ],
