@@ -2,10 +2,11 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import img from "../../assets/images/login/login.svg"
 import { useContext } from "react";
-import { authContext } from "../../Providers/AuthProvider";
+import { AuthContext } from "../../Providers/AuthProvider";
+import SocialLogin from "../../Home/Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
-    const {login}=useContext(authContext)
+    const {login}=useContext(AuthContext)
     const location =useLocation()
     const navigate = useNavigate()
     const from = location.state?.from?.pathname || "/";
@@ -76,6 +77,7 @@ const Login = () => {
       </form>
       <p > <span className="text-2xl font-bold"> Have an Account?</span>  <Link className="text-orange-400 font-bold" to="/signup">Sign Up</Link></p>
       </div>
+      <SocialLogin></SocialLogin>
   
     </div>
   </div>

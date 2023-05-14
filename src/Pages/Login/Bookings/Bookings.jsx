@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import { authContext } from "../../../Providers/AuthProvider";
+import { AuthContext } from "../../../Providers/AuthProvider";
 import BookingList from "./BookingList";
 import { useNavigate } from "react-router-dom";
 
 const Bookings = () => {
-  const { user } = useContext(authContext);
+  const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
   const navigate = useNavigate();
   const url = `http://localhost:5000/bookings?email=${user.email}`;

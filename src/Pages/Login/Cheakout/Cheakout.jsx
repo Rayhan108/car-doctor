@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import { authContext } from "../../../Providers/AuthProvider";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 
 const Cheakout = () => {
     const services=useLoaderData()
-    const {user}=useContext(authContext)
+    const {user}=useContext(AuthContext)
     // console.log(services);
     const {title,_id,price,img}=services;
 const handleOrder=(event)=>{

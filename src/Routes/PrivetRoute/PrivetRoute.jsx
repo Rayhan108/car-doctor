@@ -1,10 +1,10 @@
 import {  useContext } from "react";
-import { authContext } from "../../Providers/AuthProvider";
+import { AuthContext } from "../../Providers/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
 
 
 const PrivetRoute = ({children}) => {
-    const {user,loading} = useContext(authContext)
+    const {user,loading} = useContext(AuthContext)
     const location =useLocation();
     if(loading){
         return <progress className="progress progress-secondary w-56" value="10" max="100"></progress>
